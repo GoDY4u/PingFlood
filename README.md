@@ -37,4 +37,3 @@ The author is not responsible for any damage, data loss, service interruption, o
 
 ---
 
-Asegúrate de que todo quede claro para evitar posibles malentendidos o mal uso.
