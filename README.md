@@ -4,7 +4,7 @@
 ---
 
 ### **Description:**
-This script performs a *Ping Flood* attack (Denial of Service by flooding with pings) on a specified target by sending a configurable number of ICMP packets based on the selected intensity level. It first checks the connectivity to the target before starting the attack. The number of packets sent varies depending on the level chosen:
+This simple script performs a *Ping Flood* attack (Denial of Service by flooding with pings) on a specified target by sending a configurable number of ICMP packets based on the selected intensity level. It first checks the connectivity to the target before starting the attack. The number of packets sent varies depending on the level chosen:
 
 - **Level 1**: 100,000 pings
 - **Level 2**: 500,000 pings
@@ -21,7 +21,7 @@ This script is intended solely for use in testing on your own networks or networ
 
 #### **Example usage:**
 ```bash
-sudo bash script.sh 192.168.91.132 -n 3
+./BadPing.sh <IP> -n ( 1 , 2 , 3 )
 ```
 
 ---
