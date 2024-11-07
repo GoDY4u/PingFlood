@@ -26,7 +26,7 @@ sudo ./BadPing.sh <IP> -n ( 1 , 2 , 3 )
 
 ---
 
-### **Warning and Disclaimer:**
+### **⚠️Warning and Disclaimer:⚠️**
 
 **This script should only be used on networks where you have explicit permission to perform load or security testing. Unauthorized use of this script on networks you do not own or have permission to test is illegal and punishable by law.**
 
