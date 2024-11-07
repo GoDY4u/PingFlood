@@ -21,7 +21,7 @@ This script is intended solely for use in testing on your own networks or networ
 
 #### **Example usage:**
 ```bash
-./BadPing.sh <IP> -n ( 1 , 2 , 3 )
+sudo ./BadPing.sh <IP> -n ( 1 , 2 , 3 )
 ```
 
 ---
