@@ -1,4 +1,4 @@
-# Simple-Ping-Flood 🚀💻
+# BadPing 🚀💻
 
 
 ---
@@ -21,7 +21,7 @@ This script is intended solely for use in testing on your own networks or networ
 
 #### **Example usage:**
 ```bash
-sudo ./BadPing.sh <IP> -n ( 1 , 2 , 3 )
+sudo ./BadPing.sh <IP> -n ( 1 , 2 or 3 )
 ```
 
 ---
@@ -32,8 +32,9 @@ sudo ./BadPing.sh <IP> -n ( 1 , 2 , 3 )
 
 The author is not responsible for any damage, data loss, service interruption, or legal consequences arising from the misuse of this script.
 
-**Use at your own risk!**  
 **Do not use this script for attacks without permission!**
+**Use at your own risk!**  
+
 
 ---
 
