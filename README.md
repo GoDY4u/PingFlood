@@ -1,4 +1,4 @@
-# BadPing 🚀💻
+# PingFlood 🚀💻
 
 
 ---
@@ -21,7 +21,7 @@ This script is intended solely for use in testing on your own networks or networ
 
 #### **Example usage:**
 ```bash
-sudo ./BadPing.sh <IP> -n ( 1 , 2 or 3 )
+sudo ./PingFlood.sh <IP> -n ( 1 , 2 or 3 )
 ```
 
 ---
